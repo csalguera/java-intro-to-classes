@@ -1,8 +1,3 @@
-## Java Introduction to Classes
-
-## Store
-
-```
 public class Store {
   // instance fields
   String productType;
@@ -26,8 +21,3 @@ public class Store {
     System.out.println("Our second shop has " + cookieShop.inventoryCount + " units remaining.");
   }
 }
-```
-
-Our text editor contains a complete class definition that we’ll build up as we progress through the lesson.
-
-Run the code to see it in action.
