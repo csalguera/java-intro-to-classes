@@ -12,5 +12,31 @@ public class App {
      * 
      * An object contains state and behavior
      */
+
+    /*
+     * ---------------
+     * Classes: Syntax
+     * ---------------
+     * 
+     * The fundamental concept of object-oriented programming is the calls
+     * 
+     * A class is the set of instructions that describe how an instance can behave and what information it contains
+     * 
+     * Java has built-in classes, such as System
+     */
+    
+    /*
+     * public class Car {
+     *   scope of Car class
+     *   public static void main(String[] args) {
+     *     // scope of main() method
+     *
+     *     // program tasks
+     * 
+     *   }
+     *   // scope of main() method ends
+     * }
+     * // scope of Car class ends
+      */
   }
 }
