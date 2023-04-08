@@ -31,3 +31,9 @@ public class Store {
 Our text editor contains a complete class definition that we’ll build up as we progress through the lesson.
 
 Run the code to see it in action.
+
+In the code editor, create a public `Store` class.
+
+Your program will not compile without a `main()` method.
+
+Define one within `Store`.
