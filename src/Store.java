@@ -3,8 +3,8 @@ public class Store {
   String productType;
 
   // constructor method
-  public Store() {
-    
+  public Store(String product) {
+    productType = product;
   }
 
   // main method
