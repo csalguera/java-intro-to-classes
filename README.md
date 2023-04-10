@@ -62,3 +62,5 @@ When Store() finishes execution, we return to main()
 Add some state to our Store class.
 
 Declare a String instance field for productType.
+
+Add the String parameter product to the Store() constructor.
