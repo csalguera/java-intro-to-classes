@@ -64,3 +64,5 @@ Add some state to our Store class.
 Declare a String instance field for productType.
 
 Add the String parameter product to the Store() constructor.
+
+Inside main(), create an instance of Store and assign it to the variable lemonadeStand. Use "lemonade" as the parameter value.
