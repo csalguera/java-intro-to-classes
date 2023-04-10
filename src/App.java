@@ -76,5 +76,39 @@ public class App {
      * the value of our variable is a reference to an instance's memory address
      * 
      */
+
+    /*
+     * ------------------------ 
+     * Classes: Instance Fields
+     * ------------------------ 
+     * 
+     * When an object is created, the constructor sets the initial state of the objec
+     * The state is made up of associated data that represents the characteristics of an object
+     * 
+     * We'll add data to an object by introducing instance variables, or instance fields
+     * 
+     * We want Car instances of different colors, so we declare a String color instance field.
+     * Often times, instance variables are described as a "has-a" relationship with the object
+     * 
+     * For example Car has a color
+     * 
+     * public class Car {
+     *   // declare fields inside the class by specifying the type and name
+     *   String color;
+     * 
+     *   public Car() {
+     *     // instance fields available in scope of constructor method
+     *   }
+     * 
+     *   public static void main(String[] args) {
+     *     // body of main method
+     *   }
+     * }
+     * 
+     * The declaration is within the class and the instance variable will be available for assignment inside the constructor.
+     * 
+     * Fields are a type of state each instance will possess
+     * One instance may 'red' as its color, another 'blue', etc
+     */
   }
 }

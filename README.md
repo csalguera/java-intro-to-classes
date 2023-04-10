@@ -58,3 +58,7 @@ Running the program invokes main()
 We create an instance so we move from main() to Store()
 The code inside Store() runs
 When Store() finishes execution, we return to main()
+
+Add some state to our Store class.
+
+Declare a String instance field for productType.
