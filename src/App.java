@@ -230,5 +230,38 @@ public class App {
      *   }
      * }
      */
+
+    /*
+     * ------
+     * Review
+     * ------
+     * 
+     * Java is an object-oriented programming language where every program has at least one class
+     * Programs are often built from many classes and objects, which are the instances of a class
+     * 
+     * Classes define the state and behavior of their instances
+     * Behavior comes from instance fields declared inside the class
+     * 
+     * Classes are modeled on the real-world things we want to represent in our program
+     * 
+     * public class Dog {
+     *   // instance field
+     *   String breed;
+     *   // constructor method
+     *   public Dog(String dogBreed) {
+     *     // value of parameter dogBreed assigned to instance field breed
+     *     breed = dogBreed;
+     *   }
+     *   public static void main(String[] args) {
+     *     // create instance:
+     *     // use 'new' operator and invoke constructor
+     *     Dog fido = new Dog("poodle");
+     *     // fields are accessed using:
+     *     // the instance name, `.` operator, and the field name
+     *     fido.breed
+     *     // "poodle"
+     *   }
+     * }
+     */
   }
 }
