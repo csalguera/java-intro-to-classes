@@ -189,5 +189,46 @@ public class App {
      * ferrari.color;
      * // "red"
      */
+
+    /*
+     * ---------------
+     * Multiple Fields
+     * ---------------
+     * 
+     * Objects are not limited to a single instance field
+     * 
+     * We can declare as many fields as necessary
+     * 
+     * LEt's change Car instances so the have multiple fields
+     * 
+     * We'll add a boolean isRunning, that indicates the car engine is on
+     * and an int velocity, that indicates the speed at which the car is traveling
+     * 
+     * public class Car {
+     *   String color;
+     *   // new fields!
+     *   boolean isRunning;
+     *   int velocity;
+     * 
+     *   // new parameters that correspond to the new fields
+     *   public Car(String carColor, boolean carRunning, int milesPerHour) {
+     *     color = carColor;
+     *     // assign new parameters to the new fields
+     *     isRunning = carRunning;
+     *     velocity = milesPerHour;
+     *   }
+     * 
+     *   public static void main(String[] args) {
+     *     // new values passed into the method call
+     *     Car ferrari = new Car("red", true, 27);
+     *     Car renault = new Car("blue", false, 70);
+     * 
+     *     System.out.println(renault.isRunning);
+     *     // false
+     *     System.out.println(ferrari.velocity);
+     *     // 27
+     *   }
+     * }
+     */
   }
 }

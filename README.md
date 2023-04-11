@@ -66,3 +66,7 @@ Declare a String instance field for productType.
 Add the String parameter product to the Store() constructor.
 
 Inside main(), create an instance of Store and assign it to the variable lemonadeStand. Use "lemonade" as the parameter value.
+
+Add two new instance fields for Store.
+
+inventoryCount of type int. inventoryPrice of type double.
