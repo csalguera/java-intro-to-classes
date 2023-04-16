@@ -1,6 +1,17 @@
 ## Java Introduction to Classes
 
-## Store
+## Contents
+
+* Introduction to Classes
+* Syntax
+* Constructors
+* Instance Fields
+* Constructor Parameters
+* Assigning Values to Instance Fields
+* Multiple Fields
+* Review
+
+## Introduction to Classes
 
 ```
 public class Store {
@@ -32,60 +43,182 @@ Our text editor contains a complete class definition that we’ll build up as we
 
 Run the code to see it in action.
 
-In the code editor, create a public `Store` class.
+## Syntax
 
-Your program will not compile without a `main()` method.
+```
+public class Store {
+  public static void main(String[] args) {
+    
+  }
+}
+```
 
-Define one within `Store`.
+1. In the code editor, create a public `Store` class.
 
-Let’s explore how code execution moves around the file with two methods.
+2. Your program will not compile without a `main()` method.
 
-Add a print statement inside our Store constructor with the message: I am inside the constructor method.
+    Define one within `Store`.
 
-We’ll see this message whenever we create an instance of Store by calling the constructor.
+## Constructors
 
-We did not see our constructor message printed because we haven’t run the code inside the constructor.
+```
+public class Store {
+  
+  // new method: constructor!
+  public Store() {
+    System.out.println("I am inside the constructor method.");
+  }
+  
+  // main method is where we create instances!
+  public static void main(String[] args) {
+    System.out.println("Start of the main method.");
+    
+    // create the instance below
+    Store lemonadeStand = new Store();
+    // print the instance below
+    System.out.println(lemonadeStand);
+  }
+}
+```
 
-Inside main(), create an instance of Store called lemonadeStand. Don’t forget the new keyword!
+1. Let’s explore how code execution moves around the file with two methods.
 
-We should see the constructor message.
+    Add a print statement inside our `Store` constructor with the message: `I am inside the constructor method.`
 
-Inside main(), print lemonadeStand to see how Java represents this instance.
+    We’ll see this message whenever we create an instance of `Store` by calling the constructor.
 
-Review the order of the printed messages:
+2. We did not see our constructor message printed because **we haven’t run the code inside the constructor**.
 
-Running the program invokes main()
-We create an instance so we move from main() to Store()
-The code inside Store() runs
-When Store() finishes execution, we return to main()
+    Inside `main()`, create an instance of `Store` called `lemonadeStand`. Don’t forget the `new` keyword!
 
-Add some state to our Store class.
+    We should see the constructor message.
 
-Declare a String instance field for productType.
+3. Inside `main()`, print `lemonadeStand` to see how Java represents this instance.
 
-Add the String parameter product to the Store() constructor.
+    Review the order of the printed messages:
+    1. Running the program invokes `main()`
+    2. We create an instance so we move from `main()` to Store()
+    3. The code inside Store() runs
+    4. When Store() finishes execution, we return to `main()`
 
-Inside main(), create an instance of Store and assign it to the variable lemonadeStand. Use "lemonade" as the parameter value.
+## Instance Fields
 
-Add two new instance fields for Store.
+```
+public class Store {
+  // declare instance fields here!
+  String productType;
+  
+  // constructor method
+  public Store() {
+    System.out.println("I am inside the constructor method.");
+  }
+  
+  // main method
+  public static void main(String[] args) {
+    System.out.println("This code is inside the main method.");
+    
+    Store lemonadeStand = new Store();
+    
+    System.out.println(lemonadeStand);
+  }
+}
+```
 
-inventoryCount of type int. inventoryPrice of type double.
+1. Add some state to our `Store` class.
 
-Update the Store constructor method with the new parameters.
+    Declare a `String` instance field for `productType`.
 
-The parameters should be product, count, and price, in that order.
 
-You must use that order and include the types for each parameter.
+## Constructor Parameters
 
-For example, product is of type String because that value is assigned to the instance field String productType.
+```
+public class Store {
+  // instance fields
+  String productType;
+  
+  // constructor method
+  public Store(String product) {
+    productType = product;
+  }
+  
+  // main method
+  public static void main(String[] args) {
+    
+    
+  }
+}
+```
 
-In the body of the Store constructor, assign the parameter values to the appropriate instance fields.
+1. Add the `String` parameter `product` to the `Store()` constructor.
 
-Inside main(), create an instance of Store called cookieShop.
+2. Inside of the constructor method, set the instance variable `productType` equal to the `product` parameter.
 
-cookieShop has "cookies" as the product.
+## Assigning Values to Instance Fields
 
-cookieShop has 12 cookies to sell and each cookie costs 3.75.
+```
+public class Store {
+  // instance fields
+  String productType;
+  
+  // constructor method
+  public Store(String product) {
+    productType = product;
+  }
+  
+  // main method
+  public static void main(String[] args) {
+    Store lemonadeStand = new Store("lemonade");
+    System.out.println(lemonadeStand.productType);
+  }
+}
+```
+
+1. Inside `main()`, create an instance of `Store` and assign it to the variable `lemonadeStand`. Use `lemonade` as the parameter value.
+
+2. Print the instance field `productType` from `lemonadeStand`.
+
+## Multiple Fields
+
+```
+public class Store {
+  // instance fields
+  String productType;
+  int inventoryCount;
+  double inventoryPrice;
+  
+  // constructor method
+  public Store(String product, int count, double price) {
+    productType = product;
+    inventoryCount = count;
+    inventoryPrice = price;
+  }
+  
+  // main method
+  public static void main(String[] args) {
+    Store cookieShop = new Store("cookies", 12, 3.75);
+  }
+}
+```
+
+1. Add two new instance fields for `Store`.
+
+    `inventoryCount` of type `int`. `inventoryPrice` of type `double`.
+
+2. Update the `Store` constructor method with the new parameters.
+
+    The parameters should be `product`, `count`, and `price`, **in that order**.
+
+    You must use that order and include the types for each parameter.
+
+    For example, `product` is of type `String` because that value is assigned to the instance field `String` `productType`.
+
+3. In the body of the `Store` constructor, assign the parameter values to the appropriate instance fields.
+
+    Inside `main()`, create an instance of `Store` called `cookieShop`.
+
+    `cookieShop` has `cookies` as the product.
+
+    `cookieShop` has `12` cookies to sell and each cookie costs `3.75`.
 
 ## Review
 
@@ -116,6 +249,6 @@ public class Dog {
 }
 ```
 
-The text editor contains a Dog class. Play around with the code!
+The text editor contains a `Dog` class. Play around with the code!
 
 Try to add and remove instance fields. Create instances with different values. Access and print different fields.
