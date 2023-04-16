@@ -2,14 +2,14 @@
 
 ## Contents
 
-* Introduction to Classes
-* Syntax
-* Constructors
-* Instance Fields
-* Constructor Parameters
-* Assigning Values to Instance Fields
-* Multiple Fields
-* Review
+* [Introduction to Classes](https://github.com/csalguera/java-intro-to-classes#introduction-to-classes)
+* [Syntax](https://github.com/csalguera/java-intro-to-classes#syntax)
+* [Constructors](https://github.com/csalguera/java-intro-to-classes#constructors)
+* [Instance Fields](https://github.com/csalguera/java-intro-to-classes#instance-fields)
+* [Constructor Parameters](https://github.com/csalguera/java-intro-to-classes#constructor-parameters)
+* [Assigning Values to Instance Fields](https://github.com/csalguera/java-intro-to-classes#assigning-values-to-instance-fields)
+* [Multiple Fields](https://github.com/csalguera/java-intro-to-classes#multiple-fields)
+* [Review](https://github.com/csalguera/java-intro-to-classes#review)
 
 ## Introduction to Classes
 
